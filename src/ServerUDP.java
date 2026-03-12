@@ -33,7 +33,6 @@ public class ServerUDP {
                 byte[] bufferOut = messageOut.getBytes();
                 DatagramPacket outPacket = new DatagramPacket(bufferOut, bufferOut.length, clientAddress, clientPort);
                 dSocket.send(outPacket);
-
                 System.out.println("Risposta inviata al client");
             }
 

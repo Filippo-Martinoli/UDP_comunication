@@ -43,7 +43,6 @@ public class ClientUDP {
                 DatagramPacket inPacket = new DatagramPacket(bufferIn, bufferIn.length);
                 dSocket.receive(inPacket);
                 String response = new String(inPacket.getData(), 0, inPacket.getLength());
-
                 System.out.println("Risposta ricevuta dal server: " + response);
             }
 
